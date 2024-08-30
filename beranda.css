@@ -389,7 +389,6 @@ footer {
 
 .sosmed {
     display: flex;
-    margin-top: 10px;
     justify-content: space-between;
     align-items: center;
 }
