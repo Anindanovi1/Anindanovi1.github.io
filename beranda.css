@@ -13,9 +13,14 @@ body {
     width: 100%;
 }
 
-hr {
+.hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr hr {
     width: 85%;
-    margin-left: 128px;
     color: #c4c4c4;
 }
 
@@ -78,13 +83,10 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
+    padding: 16px;
     background-color: #00A69BBF;
-    width: 100%;
     height: 300px;
-}
-
-.apbdes-content {
-    width: 825px;
 }
 
 .apbdes-content h2 {
@@ -92,22 +94,17 @@ hr {
     font-weight: 500;
     text-decoration: none;
     color: white;
-    margin-bottom: 10px;
-    width: max-content;
-    margin-left: 155px;
 }
 
 .apbdes-content p {
     font-size: 26px;
     color: white;
     line-height: 30px;
-    margin-left: 70px;
 }
 
 .apbdes-btn {
     display: flex;
     align-items: center;
-    margin-right: 155px;
 }
 
 .apbdes-btn button {
@@ -131,7 +128,6 @@ hr {
 .section {
     width: 492px; 
     background-color: #fff;
-    border-radius: 8px;
     margin-bottom: 20px;
     margin-top: 176px;
 }
@@ -178,18 +174,23 @@ hr {
     font-weight: 400;
 }
 
-.section button {
-    width: 173px;
-    margin-bottom: 90px;
+.section .btn-br {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.section .btn-br button {
     padding: 10px 30px;
     background-color: #4fc3a1;
     color: white;
     border: none;
     border-radius: 10px;
     font-family: roboto;
-    font-size: 16px;
-    margin-left: 170px;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    width: max-content;
 }
 
 .label {
@@ -249,7 +250,7 @@ hr {
 
 /* LAYANAN */
 .layanan {
-    padding: 45px 116px 127px 116px;
+    padding: 50px 116px ;
     text-align: center;
     border: 1px solid #c4c4c4;
 }
@@ -258,13 +259,14 @@ hr {
     font-size: 30px;
     color: #9e9e9e;
     text-decoration: underline;
-    margin-bottom: 128px;
+    margin-bottom: 120px;
 }
 
 .layanan-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 3rem;
 }
 
 .layanan-card {
@@ -295,10 +297,7 @@ hr {
 /* PETA */
 .container-peta {
     background-color: #eefffa;
-    padding-left: 118px;
-    padding-right: 112px;
-    padding-top: 63px;
-    padding-bottom: 86px;
+    padding: 119px 108px;
     max-width: 100%;
     width: 100%;
 }
@@ -310,18 +309,22 @@ hr {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 90px;
-    padding-top: 0;
+}
+
+.iframe-peta {
+    width:535px; 
+    height:535px;
 }
 
 .content-peta {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 3rem;
 }
 
 .text-section {
     flex: 1;
-    max-width: 564px;
 }
 
 .text-section p {
@@ -340,9 +343,7 @@ hr {
     color: #9e9e9e;
     font-size: 22px;
     font-weight: 500px;
-    margin-left: 90px;
-    margin-top: 15px;
-    margin-bottom: 19px;
+    margin: 15px 0px 19px 90px;
 }
 
 .features li span img {
@@ -407,4 +408,35 @@ footer {
     display: flex;
     width: 280px;
     height: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .content-peta {
+        flex-direction: column-reverse;
+    }
+
+    .iframe-peta {
+        width: calc(100vw - 238px);
+    }
+}
+
+@media (max-width: 860px) {
+    .apbdes {
+        height: 100%;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .apbdes-content p {
+        font-size: 16px;
+    }
+
+    .iframe-peta {
+        width: calc(100vw - 144px);
+    }
+
+    .container-peta {
+        padding: 72px 64px;
+    }
 }
