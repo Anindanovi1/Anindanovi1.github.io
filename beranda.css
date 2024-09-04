@@ -1,37 +1,17 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: #fff;
     font-family: roboto;
 }
 
-.container {
-    width: 100%;
-}
-
-.hr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hr hr {
-    width: 85%;
-    color: #c4c4c4;
-}
-
-/* NAVBAR */
 nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 100;
     position: fixed;
 }
@@ -115,13 +95,16 @@ nav button {
     transform: scale(0);
 }
 
-/* RESPONSIVE NAVBAR */
+/* RESPONSIVE */
+
+/* ukuran tablet */
 @media screen and (max-width: 768px) {
     nav ul {
         width: 50%;
     }
 }
 
+/* ukuran mobile */
 @media screen and (max-width: 576px) {
     .menu-toggle {
         display: flex;
@@ -520,4 +503,5 @@ footer {
     .container-peta {
         padding: 72px 64px;
     }
+
 }
