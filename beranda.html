@@ -10,27 +10,32 @@
     </style>
 </head>
 <body>
-    <!-- NAVBAR -->
+    <!-- CONTAINER -->
     <div class="container">
-        <div class="navbar">
-            <img src="img/logo.png" alt="Logo">
-            <ul class="nav-link">
-                <li class="beranda"><a href="#">Beranda</a></li>
+
+        <!-- NAVBAR -->
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a class="beranda" href="#">Beranda</a></li>
                 <li><a href="#">Profil</a></li>
                 <li><a href="#">Potensi</a></li>
                 <li><a href="#">Layanan</a></li>
                 <li><a href="#">Peta</a></li>
             </ul>
-            <div class="login-btn">
-                <a href="#">Login</a>
+            <button>Login</button>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>  
-         <div class="hero">
-            <img src="img/hero.jpg" alt="Hero">
-         </div>
+        </nav>
 
-         <!-- APBDES -->
-         <section class="apbdes">
+        <!-- APBDES -->
+        <section class="apbdes">
             <div class="apbdes-content">
                 <h2>APBDES</h2>
                 <p>Transparansi pengelolaan keuangan merupakan bentuk pengawasan penggunaan dan pengelolaan 
@@ -206,3 +211,13 @@
     </div>
 </body>
 </html>
+
+<!-- SCRIPT HAMBURGER MENU -->
+ <script>
+    const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function( ) {
+    nav.classList.toggle('slide');
+});
+ </script>
