@@ -129,7 +129,7 @@ nav button {
     nav button {
         display: none;
     }
-    
+
     nav ul.slide {
         opacity: 1;
         transform: translateX(0);
@@ -489,7 +489,7 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     .apbdes {
         height: 100%;
         flex-direction: column;
