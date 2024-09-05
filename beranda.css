@@ -485,7 +485,7 @@ footer {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 576px) {
     .apbdes {
         height: 100%;
         flex-direction: column;
