@@ -145,6 +145,11 @@ nav button {
         opacity: 1;
         transform: translateX(0);
     }
+
+    nav .logo img {
+        width: 190px;
+        height: auto;
+    }
 }
 
 /* HERO */
@@ -206,7 +211,6 @@ nav button {
 .section {
     width: 492px; 
     background-color: #fff;
-    /* margin-bottom: 20px; */
     margin-top: 150px;
     padding: 10px;
 }
@@ -308,7 +312,7 @@ nav button {
 .potensi-card {
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 375px;
 }
@@ -348,7 +352,7 @@ nav button {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 3rem;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .layanan-card {
@@ -425,7 +429,7 @@ nav button {
     color: #9e9e9e;
     font-size: 22px;
     font-weight: 500px;
-    margin: 15px 0px 19px 90px;
+    /* margin: 15px 0px 19px 90px; */
 }
 
 .features li span img {
@@ -522,4 +526,54 @@ footer {
         padding: 72px 64px;
     }
 
+    .potensi-container {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-content p {
+        font-size: 20px;
+    }
+
+    .footer-content .sosmed p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-b img {
+        width: 180px;
+        height: 125px;
+    }
+
+    .card-content h3{
+        font-size: 18px;
+    }
+
+    .card-content p {
+        font-size: 18px;
+    }
+
+    .card-i img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .layanan {
+        padding: 50px 20px;
+    }
+
+    .layanan-card h3 {
+        font-size: 18px;
+    }
+
+    .layanan-card p {
+        font-size: 16px;
+    }
+
+    .iconfoot a img {
+        width: 45px;
+        height: 45px;
+    }
 }
