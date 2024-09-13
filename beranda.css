@@ -531,12 +531,16 @@ footer {
     }
 
     .footer-content p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .footer-content .sosmed p {
-        font-size: 20px;
+        font-size: 18px;
     }
+
+    .section {
+        margin-top: 100px;
+    }    
 }
 
 @media (max-width: 500px) {
@@ -573,5 +577,33 @@ footer {
     .iconfoot a img {
         width: 45px;
         height: 45px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    .container-peta {
+        padding: 40px;
+    }
+
+    .peta .iframe-peta{
+        justify-content: center;
+    }
+
+    .iframe-peta {
+        width: calc(100vw - 100px);
+    }
+
+    .text-section p {
+        font-size: 20px;
+    }
+
+    .features li {
+        font-size: 18px;
+    }
+
+    .layanan h2 {
+        margin-bottom: 90px;
     }
 }
