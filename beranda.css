@@ -503,6 +503,12 @@ footer {
     .iframe-peta {
         width: calc(100vw - 238px);
     }
+
+    .potensi-container {
+        padding: 89px 30px 30px 30px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 860px) {
@@ -522,12 +528,6 @@ footer {
 
     .container-peta {
         padding: 72px 64px;
-    }
-
-    .potensi-container {
-        padding: 30px;
-        display: flex;
-        justify-content: center;
     }
 
     .footer-content p {
