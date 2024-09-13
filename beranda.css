@@ -405,7 +405,7 @@ nav button {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .text-section {
